@@ -4,11 +4,13 @@ import { aboutData, portfolioData, resumeData } from "../../_data";
 import { Data } from "../../domain";
 import { Portfolio } from "../../portfolio/components/Portfolio";
 import { Resume } from "../../resume/components/Resume";
+import { Blog } from "../../blog/components/Blog";
 
 export const MAIN_PAGES = {
   ABOUT_ME: 0,
   RESUME: 1,
   PORTFOLIO: 2,
+  BLOG: 3,
 } as const;
 
 let pageList: {
@@ -34,6 +36,12 @@ pageList[MAIN_PAGES["PORTFOLIO"]] = {
   data: portfolioData,
   component: Portfolio,
   path: "/portfolio",
+};
+pageList[MAIN_PAGES["BLOG"]] = {
+  name: "blog",
+  data: portfolioData,
+  component: Blog,
+  path: "/blog",
 };
 
 export const PAGE_LIST = pageList;

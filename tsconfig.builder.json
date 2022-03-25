@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "dist",
+    "jsx": "react",
+    "noEmit": false
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/lib/builder/*.ts"]
+}

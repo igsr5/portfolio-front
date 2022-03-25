@@ -1,6 +1,6 @@
-export type PortfolioData = {
+export type BlogData = {
   categoryData: CategoryDataType[];
-  mediaItems: MediaItemType[];
+  blogItems: BlogItemType[];
 };
 
 export const CATEGORY = {
@@ -19,15 +19,12 @@ export const DEV_STYLE = ["個人開発", "チーム開発", "インターン開
 
 type DevDate = Date;
 
-export type MediaItemType = {
+export type BlogItemType = {
   id: number;
   title: string;
   categoryID: CategoryType;
   thumbnailUrl: string;
   imgUrl: string;
-  description: string;
-  devStyle: DevStyle;
   devDate: DevDate;
-  tags: string[];
   externalUrl?: string;
 };
